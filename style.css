@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: rgb(17, 17, 17);
+    color: white;
 }
 html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -29,15 +31,23 @@ nav > ul{
 .contenedor-peliculas{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
-
+.pelicula > *{
+    color: rgba(255, 255, 255, 1);
+}
+.pelicula > *:hover{
+    color: rgba(255, 255, 255, 1);
+}
 .contenedor-actores{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .contenedor-festivales-series{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .contenedor-festivales{
     display: flex;
@@ -46,10 +56,12 @@ nav > ul{
 .contenedor-series{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .contenedor-top{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .redes-sociales{
     display: flex;
@@ -63,4 +75,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.logotipo{
+    background-color: white;
 }
