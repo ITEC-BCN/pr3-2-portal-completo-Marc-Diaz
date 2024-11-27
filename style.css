@@ -1,12 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(17, 17, 17);
-    color: white;
+
 }
-html{
+body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
+    background-color: rgb(17, 17, 17);
+    color: white;
 }
 header{
     display: flex;
@@ -28,35 +29,97 @@ nav > ul{
     flex-direction: row;
     justify-content: space-around;
 }
+.seccion-peliculas{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right:2rem;
+    gap: 10px;
+}
+section > h2{
+    margin-left: 50px;
+}
 .contenedor-peliculas{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
-.pelicula > *{
-    color: rgba(255, 255, 255, 1);
+.pelicula-serie{
+    width: 17rem;
+    height: 25rem;
 }
-.pelicula > *:hover{
-    color: rgba(255, 255, 255, 1);
+.pelicula-serie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.pelicula-serie-texto{
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    justify-self: center;
+    position: relative;
+    top: -25.25rem;
+    line-height: 2rem;
+    background-color: transparent;
+}
+
+.pelicula-serie h6{
+    text-align: center;
+    font-size: 1rem;
+}
+.pelicula-serie a{
+    text-decoration: none;
+}
+.pelicula-serie p{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+}
+
+.pelicula-serie-texto:hover{
+    background-color: rgba(17, 17, 17, 0.75);
+    color: white;
+}
+
 .contenedor-actores{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
+}
+.actor{
+    width: 15rem;
+}
+.actor img{
+    width: 100%;
 }
 .contenedor-festivales-series{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    gap: 1rem;
 }
 .contenedor-festivales{
+    width: 50%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+.festival{
+    width: 100%;
+}
+.festival img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .contenedor-series{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .contenedor-top{
     display: flex;
