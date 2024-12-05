@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marc Diaz">
+    <meta name="description" content="Página de contacto.">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="Imagenes/logo.png" alt="Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="https://fontmeme.com/permalink/241128/ffd9b9768cf8103d3d89e27f9c73d2ac.png" class="logo-ITB"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="peliculas.html">Todas las peliculas</a></li>
+            <li><strong><a href="contacto.html">Contacto</a></strong></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="seccion-formulario">
+            <form action="" method="post" class="contacto-formulario">
+                <h3 class="contacto-titulo">Contacta con nosotros</h3>
+                <p for="nombre" class="contacto-label">Nombre</p>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre." class="contacto-campo">
+                <p for="apellidos" class="contacto-label">Apellidos</p>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" class="contacto-campo">
+                <p for="telefono" class="contacto-label">Télefono</p>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" class="contacto-campo">
+                <p for="mensaje" class="contacto-label">Mensaje</p>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe una breve mensaje" rows="8" cols="80" class="contacto-campo"></textarea>
+                <button type="submit" class="contacto-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul class="redes-sociales">
+            <li><a href=""><img class="logotipo" src="Imagenes/logotipo-de-facebook.png" alt=""></a></li>
+            <li><a href=""><img class="logotipo" src="Imagenes/logotipo-de-twitter.png" alt=""></a></li>
+            <li><a href=""><img class="logotipo" src="Imagenes/logotipo-de-instagram.png" alt=""></a></li>
+        </ul>
+        <ul class="links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="peliculas.html">Peliculas</a></li>
+            <li><a href="contacto.html"><strong>Contacto</strong></a></li>
+        </ul>
+        <div class="contenedor-direccion-copyright">
+            <address>Carrer d'Aiguablava, 121, Nou Barris, 08033 Barcelona</address>
+            <p>All Rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

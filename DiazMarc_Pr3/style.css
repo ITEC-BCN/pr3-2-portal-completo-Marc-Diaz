@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes pelicula-serie {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: rgba(17, 17, 17, 0.75);
+    }
+
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: white
+    }
+
+    from {
+        scale: 1
+    }
+
+    to {
+        scale: 1.1
+    }
+}
+
+@keyframes top-texto {
+    from {
+        font-size: 25rem;
+    }
+
+    to {
+        font-size: 16rem
+    }
+
+    from {
+        color: transparent
+    }
+
+    to {
+        color: black
+    }
+
+    from {
+        text-shadow: 2px 0 transparent, -2px 0 transparent, 0 2px transparent, 0 -2px transparent,
+            1px 1px transparent, -1px -1px transparent, 1px -1px transparent, -1px 1px transparent;
+    }
+
+    to {
+        text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+            1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    }
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #DB202C;
+    border-radius: 10px;
+}
+
+header {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 20rem;
+}
+
+li {
+    list-style: none;
+
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    height: 3rem;
+    background-color: rgba(17, 17, 17, 0.8);
+    position: sticky;
+    top: 0;
+}
+
+nav>ul {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo-ITB {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.seccion-peliculas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 10px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.contenedor-peliculas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-around;
+}
+
+.pelicula-serie {
+    width: 17rem;
+    height: 25rem;
+}
+
+.pelicula-serie img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pelicula-serie-texto {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    justify-self: center;
+    position: relative;
+    top: -25.25rem;
+    line-height: 2rem;
+    background-color: transparent;
+}
+
+.pelicula-serie h6 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.pelicula-serie a {
+    text-decoration: none;
+}
+
+.pelicula-serie p {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.pelicula-serie-texto:hover {
+    animation-name: pelicula-serie;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.contenedor-actores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.actor {
+    width: 15rem;
+    text-align: center;
+}
+
+.actor img {
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.actor h6 {
+    font-size: 1rem;
+}
+
+.contenedor-festivales-series {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.contenedor-festivales-series aside {
+    width: 38.4%;
+}
+
+.contenedor-festivales-series section {
+    width: 67%;
+}
+
+.contenedor-festivales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.festival {
+    width: 100%;
+    height: 25rem;
+}
+
+.festival:hover {
+    filter: brightness(0.5);
+}
+
+.festival img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-series {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 20px;
+}
+
+.contenedor-top {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.top-titulo {
+    text-align: center;
+}
+
+.top {
+    width: 17rem;
+    height: 25rem;
+}
+
+.top img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-texto {
+    height: 100%;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -25.25rem;
+    background-color: transparent;
+    color: transparent;
+    font-size: 15rem;
+    font-weight: 700;
+    text-shadow: 2px 0 transparent, -2px 0 transparent, 0 2px transparent, 0 -2pxtransparent,
+        1px 1px transparent, -1px -1px transparent, 1px -1px transparent, -1px 1px transparent;
+}
+
+.top-texto:hover {
+    animation: top-texto;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.contenedor-todas-peliculas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.seccion-formulario {
+    width: 60%;
+    height: 40rem;
+    margin: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(https://w0.peakpx.com/wallpaper/395/452/HD-wallpaper-movie-posters-horror-movies-posters-scarry-thumbnail.jpg);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-formulario {
+    width: 25rem;
+    height: 30rem;
+    background-color: rgba(17, 17, 17, 0.7);
+    border-radius: 15px;
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacto-label {
+    margin-top: 1rem;
+}
+
+.contacto-campo {
+    background-color: rgb(50, 50, 50);
+    padding: 10px;
+    color: white;
+    border: 3px solid black;
+}
+
+.contacto-campo:focus {
+    outline: 0;
+    border: 3px solid #DB202C;
+}
+
+::-webkit-input-placeholder {
+    color: white
+}
+
+.contacto-enviar {
+    margin-top: 1rem;
+    background-color: rgb(17, 17, 17);
+    border: 0;
+    padding: 10px;
+    color: white;
+}
+
+.contacto-enviar:hover {
+    background-color: rgb(12, 12, 12);
+}
+
+.contenedor-pelicula {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contenedor-trailer-informacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pelicula-informacion {
+    width: 40%;
+    line-height: 1.5;
+}
+
+footer {
+    height: 16rem;
+    margin-top: 3rem;
+    background-color: rgb(28, 27, 27);
+    border-top: 1px solid #DB202C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes-sociales {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.logotipo {
+    width: 24px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.logotipo:hover {
+    box-shadow: 0px 0px 8px white;
+}
+
+.links {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 1.5rem;
+}
+
+.links strong {
+    text-shadow: 0px 0px 2px white;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.contenedor-direccion-copyright {
+    margin-top: 4rem;
+    text-align: center;
+    line-height: 2;
+}
